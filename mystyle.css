@@ -1,0 +1,42 @@
+/* mystyle.css - X Cricket Academy */
+
+/*Background & color for home page*/
+.body1{
+background-image: url('stadium.png');
+background-size: cover;
+background-repeat: no-repeat;
+color:white;
+font-family:Calisto MT,sans-serif;}
+
+/*Background & color for About us, Lessons, Resources and Contact us page*/
+.body2{
+background-image: url('stadium.2.png');
+background-size: cover;
+background-repeat: no-repeat;
+color:white;
+font-family:Calisto MT,sans-serif;}
+
+h1{
+text-align:center;}
+
+/*Padding, Border and Margin*/
+.box{
+background-color: rgba(0, 0, 0, 0.3);
+border: 1px solid lightgrey;
+padding: 10px;
+margin: 20px;
+text-align: center;}
+
+/*Navigation bar*/
+.navbar a{
+color: white;}
+
+.navbar a:hover{
+color: forestgreen;}
+
+/*aligning two videos side by side*/
+.Youtube-video{
+ display: flex;
+ justify-content: center;
+ gap: 50px;
+ flex-wrap: wrap;}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<head>
+<title>Contact us</title>
+
+<!--External CSS file-->
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+
+//JavaScript for form validation
+<script>
+//Email validation code from W3 school
+function validateEmail(email) {
+var mailformat = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+return mailformat.test(email);}
+
+function validateForm() {
+var name = document.getElementById("name").value;
+var age = document.getElementById("age").value;
+var phone = document.getElementById("phone").value;
+var email = document.getElementById("email").value;
+var message = document.getElementById("message").value;
+
+// Checking for empty fields
+if (name === "" || age === "" || phone === "" || email === "" || message === "") {
+alert("Please fill in all the fields before submitting.");
+return false;}
+
+// Checking for valid email
+if (!validateEmail(email)) {
+alert("Invalid email address. Please enter a valid email.");
+return false;}
+
+alert("Thank you! Your message has been sent.");
+return true;}
+</script>
+
+</head>
+
+<body class="body2">
+<br>
+<!--Logo-->
+<img src="logo.jpg" height="120" width="120" align="right" alt="Logo of the academy">
+<h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Contact us</h1>
+<br>
+
+<!-- Navigation Bar -->
+<div class="navbar" align="left">
+<h3 align="center">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<a href="Index.html">Home Page</a>&nbsp; &nbsp;
+<a href="About us.html">About us</a>&nbsp; &nbsp;
+<a href="Lessons.html">Lessons</a>&nbsp; &nbsp;
+<a href="Resources.html">Resources</a>&nbsp; &nbsp;
+</h3>
+</div>
+<hr>
+
+<p>Join us to train with experienced coaches and become part of a supportive cricketing community. <br> <br>
+We would love to hear from you! Contact us for any inquiries about training, lessons, or general information.</p>
+
+<!--Form-->
+<form onsubmit="return validateForm();">
+Name *:<br>
+<input type="text" id="name" name="name"><br>
+Age *:<br>
+<input type="text" id="age" name="age"><br>
+Phone *:<br>
+<input type="text" id="phone" name="phone"><br>
+Email *:<br>
+<input type="text" id="email" name="email"><br>
+Your Message *:<br>
+<input type="text" id="message" name="message"><br> <br>
+<input type="submit" value="Submit"> &nbsp
+<input type="reset" value="Reset"><br>
+</form>
+
+<!--Email-->
+<p>Or, email us at
+<a href="mailto:33136881@student.uwl.ac.uk" style="color:white">Md Rafat</a> for further details.</p>
+
+<!--Social accounts-->
+<p>Connect with us on Social Media:</p>
+<a href="https://www.facebook.com/share/19VA4MqDUw/"  style="color:white">Facebook</a> &nbsp; &nbsp;
+<a href="https://www.instagram.com/mohammed.rafat_17?igsh=MXB2Ym11OHpqemh3"  style="color:white">Instagram</a>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<!-- Footer -->
+<footer>
+<small> ©2025 My Website. All rights reserved.</small>
+</footer>
+
+</body>
+</html>
